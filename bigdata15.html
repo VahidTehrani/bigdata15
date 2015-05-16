@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://easmworkshop.github.io/ -->
+<html class="global xlarge large"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1"><style type="text/css">html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}body{-webkit-text-size-adjust:none}</style><style type="text/css">*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}</style><meta name="viewport" content="initial-scale=1">
+        <title>bigdata15</title>
+
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+        <script src="./bigdata15/jquery.min.js"></script>
+        <script src="./bigdata15/jquery.scrollzer.min.js"></script>
+        <script src="./bigdata15/jquery.scrolly.min.js"></script>
+        <style type="text/css">.row{border-bottom:solid 1px transparent}.row>*{float:left}.row:after,.row:before{content:"";display:block;clear:both;height:0}.row.uniform>*>:first-child{margin-top:0}.row.uniform>*>:last-child{margin-bottom:0}.\31 2u,.\31 2u\24{width:100%;clear:none;margin-left:0}.\31 1u,.\31 1u\24{width:91.6666666667%;clear:none;margin-left:0}.\31 0u,.\31 0u\24{width:83.3333333333%;clear:none;margin-left:0}.\39 u,.\39 u\24{width:75%;clear:none;margin-left:0}.\38 u,.\38 u\24{width:66.6666666667%;clear:none;margin-left:0}.\37 u,.\37 u\24{width:58.3333333333%;clear:none;margin-left:0}.\36 u,.\36 u\24{width:50%;clear:none;margin-left:0}.\35 u,.\35 u\24{width:41.6666666667%;clear:none;margin-left:0}.\34 u,.\34 u\24{width:33.3333333333%;clear:none;margin-left:0}.\33 u,.\33 u\24{width:25%;clear:none;margin-left:0}.\32 u,.\32 u\24{width:16.6666666667%;clear:none;margin-left:0}.\31 u,.\31 u\24{width:8.3333333333%;clear:none;margin-left:0}.\31 2u\24+*,.\31 1u\24+*,.\31 0u\24+*,.\39 u\24+*,.\38 u\24+*,.\37 u\24+*,.\36 u\24+*,.\35 u\24+*,.\34 u\24+*,.\33 u\24+*,.\32 u\24+*,.\31 u\24+*{clear:left;}.\-11u{margin-left:91.6666666667%}.\-10u{margin-left:83.3333333333%}.\-9u{margin-left:75%}.\-8u{margin-left:66.6666666667%}.\-7u{margin-left:58.3333333333%}.\-6u{margin-left:50%}.\-5u{margin-left:41.6666666667%}.\-4u{margin-left:33.3333333333%}.\-3u{margin-left:25%}.\-2u{margin-left:16.6666666667%}.\-1u{margin-left:8.3333333333%}</style><style type="text/css">.container{margin-left:auto;margin-right:auto;width:42em}.container.\31 25\25{width:100%;max-width:52.5em;min-width:42em}.container.\37 5\25{width:31.5em}.container.\35 0\25{width:21em}.container.\32 5\25{width:10.5em}</style><style type="text/css">.row>*{padding:0px 0 0 1.5em}.row{margin:0px 0 -1px -1.5em}.row.uniform>*{padding:1.5em 0 0 1.5em}.row.uniform{margin:-1.5em 0 -1px -1.5em}.row.\32 00\25>*{padding:0px 0 0 3em}.row.\32 00\25{margin:0px 0 -1px -3em}.row.uniform.\32 00\25>*{padding:3em 0 0 3em}.row.uniform.\32 00\25{margin:-3em 0 -1px -3em}.row.\31 50\25>*{padding:0px 0 0 2.25em}.row.\31 50\25{margin:0px 0 -1px -2.25em}.row.uniform.\31 50\25>*{padding:2.25em 0 0 2.25em}.row.uniform.\31 50\25{margin:-2.25em 0 -1px -2.25em}.row.\35 0\25>*{padding:0px 0 0 0.75em}.row.\35 0\25{margin:0px 0 -1px -0.75em}.row.uniform.\35 0\25>*{padding:0.75em 0 0 0.75em}.row.uniform.\35 0\25{margin:-0.75em 0 -1px -0.75em}.row.\32 5\25>*{padding:0px 0 0 0.375em}.row.\32 5\25{margin:0px 0 -1px -0.375em}.row.uniform.\32 5\25>*{padding:0.375em 0 0 0.375em}.row.uniform.\32 5\25{margin:-0.375em 0 -1px -0.375em}.row.\30 \25>*{padding:0}.row.\30 \25{margin:0 0 -1px 0}</style><style type="text/css">.\31 2u\28 global\29,.\31 2u\24\28 global\29{width:100%;clear:none;margin-left:0}.\31 1u\28 global\29,.\31 1u\24\28 global\29{width:91.6666666667%;clear:none;margin-left:0}.\31 0u\28 global\29,.\31 0u\24\28 global\29{width:83.3333333333%;clear:none;margin-left:0}.\39 u\28 global\29,.\39 u\24\28 global\29{width:75%;clear:none;margin-left:0}.\38 u\28 global\29,.\38 u\24\28 global\29{width:66.6666666667%;clear:none;margin-left:0}.\37 u\28 global\29,.\37 u\24\28 global\29{width:58.3333333333%;clear:none;margin-left:0}.\36 u\28 global\29,.\36 u\24\28 global\29{width:50%;clear:none;margin-left:0}.\35 u\28 global\29,.\35 u\24\28 global\29{width:41.6666666667%;clear:none;margin-left:0}.\34 u\28 global\29,.\34 u\24\28 global\29{width:33.3333333333%;clear:none;margin-left:0}.\33 u\28 global\29,.\33 u\24\28 global\29{width:25%;clear:none;margin-left:0}.\32 u\28 global\29,.\32 u\24\28 global\29{width:16.6666666667%;clear:none;margin-left:0}.\31 u\28 global\29,.\31 u\24\28 global\29{width:8.3333333333%;clear:none;margin-left:0}.\31 2u\24\28 global\29+*,.\31 1u\24\28 global\29+*,.\31 0u\24\28 global\29+*,.\39 u\24\28 global\29+*,.\38 u\24\28 global\29+*,.\37 u\24\28 global\29+*,.\36 u\24\28 global\29+*,.\35 u\24\28 global\29+*,.\34 u\24\28 global\29+*,.\33 u\24\28 global\29+*,.\32 u\24\28 global\29+*,.\31 u\24\28 global\29+*{clear:left;}.\-11u\28 global\29{margin-left:91.6666666667%}.\-10u\28 global\29{margin-left:83.3333333333%}.\-9u\28 global\29{margin-left:75%}.\-8u\28 global\29{margin-left:66.6666666667%}.\-7u\28 global\29{margin-left:58.3333333333%}.\-6u\28 global\29{margin-left:50%}.\-5u\28 global\29{margin-left:41.6666666667%}.\-4u\28 global\29{margin-left:33.3333333333%}.\-3u\28 global\29{margin-left:25%}.\-2u\28 global\29{margin-left:16.6666666667%}.\-1u\28 global\29{margin-left:8.3333333333%}.\31 2u\28 xlarge\29,.\31 2u\24\28 xlarge\29{width:100%;clear:none;margin-left:0}.\31 1u\28 xlarge\29,.\31 1u\24\28 xlarge\29{width:91.6666666667%;clear:none;margin-left:0}.\31 0u\28 xlarge\29,.\31 0u\24\28 xlarge\29{width:83.3333333333%;clear:none;margin-left:0}.\39 u\28 xlarge\29,.\39 u\24\28 xlarge\29{width:75%;clear:none;margin-left:0}.\38 u\28 xlarge\29,.\38 u\24\28 xlarge\29{width:66.6666666667%;clear:none;margin-left:0}.\37 u\28 xlarge\29,.\37 u\24\28 xlarge\29{width:58.3333333333%;clear:none;margin-left:0}.\36 u\28 xlarge\29,.\36 u\24\28 xlarge\29{width:50%;clear:none;margin-left:0}.\35 u\28 xlarge\29,.\35 u\24\28 xlarge\29{width:41.6666666667%;clear:none;margin-left:0}.\34 u\28 xlarge\29,.\34 u\24\28 xlarge\29{width:33.3333333333%;clear:none;margin-left:0}.\33 u\28 xlarge\29,.\33 u\24\28 xlarge\29{width:25%;clear:none;margin-left:0}.\32 u\28 xlarge\29,.\32 u\24\28 xlarge\29{width:16.6666666667%;clear:none;margin-left:0}.\31 u\28 xlarge\29,.\31 u\24\28 xlarge\29{width:8.3333333333%;clear:none;margin-left:0}.\31 2u\24\28 xlarge\29+*,.\31 1u\24\28 xlarge\29+*,.\31 0u\24\28 xlarge\29+*,.\39 u\24\28 xlarge\29+*,.\38 u\24\28 xlarge\29+*,.\37 u\24\28 xlarge\29+*,.\36 u\24\28 xlarge\29+*,.\35 u\24\28 xlarge\29+*,.\34 u\24\28 xlarge\29+*,.\33 u\24\28 xlarge\29+*,.\32 u\24\28 xlarge\29+*,.\31 u\24\28 xlarge\29+*{clear:left;}.\-11u\28 xlarge\29{margin-left:91.6666666667%}.\-10u\28 xlarge\29{margin-left:83.3333333333%}.\-9u\28 xlarge\29{margin-left:75%}.\-8u\28 xlarge\29{margin-left:66.6666666667%}.\-7u\28 xlarge\29{margin-left:58.3333333333%}.\-6u\28 xlarge\29{margin-left:50%}.\-5u\28 xlarge\29{margin-left:41.6666666667%}.\-4u\28 xlarge\29{margin-left:33.3333333333%}.\-3u\28 xlarge\29{margin-left:25%}.\-2u\28 xlarge\29{margin-left:16.6666666667%}.\-1u\28 xlarge\29{margin-left:8.3333333333%}.\31 2u\28 large\29,.\31 2u\24\28 large\29{width:100%;clear:none;margin-left:0}.\31 1u\28 large\29,.\31 1u\24\28 large\29{width:91.6666666667%;clear:none;margin-left:0}.\31 0u\28 large\29,.\31 0u\24\28 large\29{width:83.3333333333%;clear:none;margin-left:0}.\39 u\28 large\29,.\39 u\24\28 large\29{width:75%;clear:none;margin-left:0}.\38 u\28 large\29,.\38 u\24\28 large\29{width:66.6666666667%;clear:none;margin-left:0}.\37 u\28 large\29,.\37 u\24\28 large\29{width:58.3333333333%;clear:none;margin-left:0}.\36 u\28 large\29,.\36 u\24\28 large\29{width:50%;clear:none;margin-left:0}.\35 u\28 large\29,.\35 u\24\28 large\29{width:41.6666666667%;clear:none;margin-left:0}.\34 u\28 large\29,.\34 u\24\28 large\29{width:33.3333333333%;clear:none;margin-left:0}.\33 u\28 large\29,.\33 u\24\28 large\29{width:25%;clear:none;margin-left:0}.\32 u\28 large\29,.\32 u\24\28 large\29{width:16.6666666667%;clear:none;margin-left:0}.\31 u\28 large\29,.\31 u\24\28 large\29{width:8.3333333333%;clear:none;margin-left:0}.\31 2u\24\28 large\29+*,.\31 1u\24\28 large\29+*,.\31 0u\24\28 large\29+*,.\39 u\24\28 large\29+*,.\38 u\24\28 large\29+*,.\37 u\24\28 large\29+*,.\36 u\24\28 large\29+*,.\35 u\24\28 large\29+*,.\34 u\24\28 large\29+*,.\33 u\24\28 large\29+*,.\32 u\24\28 large\29+*,.\31 u\24\28 large\29+*{clear:left;}.\-11u\28 large\29{margin-left:91.6666666667%}.\-10u\28 large\29{margin-left:83.3333333333%}.\-9u\28 large\29{margin-left:75%}.\-8u\28 large\29{margin-left:66.6666666667%}.\-7u\28 large\29{margin-left:58.3333333333%}.\-6u\28 large\29{margin-left:50%}.\-5u\28 large\29{margin-left:41.6666666667%}.\-4u\28 large\29{margin-left:33.3333333333%}.\-3u\28 large\29{margin-left:25%}.\-2u\28 large\29{margin-left:16.6666666667%}.\-1u\28 large\29{margin-left:8.3333333333%}</style><style type="text/css">.not-global,.not-xlarge,.not-large{display:none!important}.only-medium,.only-small,.only-xsmall{display:none!important}</style><link rel="stylesheet" type="text/css" href="./bigdata15/style.css"><link rel="stylesheet" type="text/css" href="./bigdata15/style-xlarge.css"><link rel="stylesheet" type="text/css" href="./bigdata15/style-large.css"><script src="./bigdata15/skel.min.js"></script>
+        <script src="./bigdata15/skel-layers.min.js"></script>
+        <script src="./bigdata15/init.js"></script>
+        <noscript>
+        &lt;link rel="stylesheet" href="css/skel.css" /&gt;
+        &lt;link rel="stylesheet" href="css/style.css" /&gt;
+        &lt;link rel="stylesheet" href="css/style-xlarge.css" /&gt;
+        </noscript>
+        <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+    </head>
+    <body><div id="skel-layers-wrapper" style="position: relative; left: 0px; right: 0px; top: 0px; backface-visibility: hidden; transition: -webkit-transform 0.5s ease, opacity 0.5s ease; -webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;">
+            <div id="wrapper">
+
+                <!-- Header -->
+
+
+                <!-- Main -->
+                <div id="main">
+
+                    <!-- One -->
+                    <section id="one">
+                        <div class="container">
+                            <header class="major">
+                                <p><b>1st International Workshop on </b><br></p>
+                                <p><h2>Deriving Value from Big Data in Healthcare</h2>
+                                </p></header>
+                            <p>In conjunction with <a href="http://cci.drexel.edu/bigdata/bigdata2015/">The IEEE International Conference on Big Data (IEEE BigData 2015) </a> <br>
+                                Oct. 29, Santa Clara, CA, USA.</p>
+                            <p>
+                                Data related insights is expected to generate more than $300 billion a
+                                year1,2 in the US health-care system. Healthcare data is multimodal 
+                                spanning EMR data, genomic, metabolomic, proteomic, environmental, 
+                                behavioral, and physiological data generating massive heterogeneous 
+                                data streams. Increased proliferation of low-cost sensors has resulted
+                                in doctors gaining access to data from patient’s life as never before 
+                                e.g., Pediatricians treating asthma may get continuous access to data
+                                on environmental triggers using a variety of sensors. Quantified Self 
+                                movement exemplifies an increasing interest of using commonly available
+                                low-cost sensors for monitoring physical and physiological observations
+                                to gain insights into various aspects of health and well-being. This data
+                                has created unprecedented opportunities in deriving valuable insights
+                                potentially saving lives, saving billions, and improving quality and
+                                well-being of people. 
+                            </p>
+
+                            <p>	
+                                The Deriving Value from Big Data in Healthcare workshop aims to provide
+                                an interdisciplinary forum for data scientists and clinical researchers
+                                to exchange ideas and share information on their latest investigations
+                                on deriving value from biomedical and healthcare data. We invite novel
+                                techniques and algorithms for deriving value from this heterogeneous Big
+                                Data in healthcare.
+                            </p>
+
+                        </div>
+                    </section>
+
+                    <!-- Two -->
+
+
+                    <section id="two">
+                        <div class="container">
+                            <h3>Call for Papers</h3>
+                            <p>
+                                Call for Papers [Download PDF?? version]
+                            </p>
+                            <p>
+                                Dear Colleagues,
+                            </p>
+                            <p>
+                                We are writing to invite you to submit your papers to the IEEE BigData-2015
+                                workshop on <b>Deriving Value from Big Data in Healthcare</b>, which will be
+                                held in Santa Clara, CA, USA on Oct 29 2015.
+                            </p>
+                            <p>
+                                By co-locating with IEEE BigData 2015, we hope the workshop will bring better
+                                awareness of interesting and challenging healthcare problems that inspire new
+                                solutions, and attract the participation of researchers in the areas of 
+                                big data who are interested in the real-world applications of big data
+                                in healthcare.
+                            </p>
+
+                            <p>
+                                We look forward to your submissions. In addition, we will greatly appreciate
+                                it if you can distribute the Call for Papers to your colleagues, students
+                                and other community members and encourage them to contribute to the workshop.
+                            </p>
+
+                            <p>
+                                Best Regards,   
+                            </p>
+
+                            <p>
+                                Workshop Co-Chairs   
+                            </p>
+
+
+                        </div>
+                    </section>
+
+
+
+                    <section id="three">
+                        <div class="container">
+                            <h3>Topics of Interest</h3>
+                            <p>The topics of the workshop include but not limited to:</p>
+                            <ul>
+                                <li>Clinical data, mainly the patient records from clinical
+                                    institutions, such as electronic health records (EHR), medical imaging, 
+                                    trial data, etc.</li>
+                                <li>
+                                    Genotype data, the genetic makeups of the individuals, such as DNA and
+                                    protein.
+                                </li>
+                                <li> 
+                                    Social media data, which is the information the individuals posted on
+                                    online social platforms such as Facebook, Twitter, PatientsLikeMe, etc.
+                                </li>
+                                <li>
+                                    Environmental sensory data including data sampled from the environment
+                                    where the individuals are living e.g., air quality, temperature, smoke,
+                                    carbon monoxide, and humidity information.
+                                </li>
+                                <li>
+                                    Mobile applications to aggregate and derive value from sensory data.
+                                </li>
+                                <li>
+                                    Behavioral and sentiment data, which could be the data recorded by
+                                    the wearable devices on patient’s activities.
+                                </li>
+                                <li>
+                                    Mobile data, which are sampled from individuals’ mobile devices.
+                                </li>
+                                <li>
+                                    Big data clinical modeling.
+                                </li>
+                                <li>
+                                    Healthcare data integration and unification, which are platforms
+                                    designed to integrate healthcare data resources.
+                                </li>
+                                <li>
+                                    Cloud based healthcare data storage and reporting.
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+
+                    <section id="four">
+                        <div class="container">
+                            <h3>Important Dates</h3>
+                            <li>Paper Submission: <b>September 3, 2015</b></li>
+                            <li>Author Notification: September 25, 2015.</li>
+                            <li>Camera ready of accepted papers: October 5, 2015.</li>
+                            <li>Workshop: October 29, 2015.</li>
+                            <br>
+                        </div>
+                    </section>
+
+                    <section id="five">
+                        <div class="container">
+                            <h3>Submission</h3>
+                            <h4>Instructions</h4>
+                            <p>High quality original submissions are solicited for oral and poster 
+                                presentation at the workshop. Papers should not exceed a maximum of 10 pages,
+                                and must follow the IEEE BigData format requirements of the main conference
+                                (IEEE Computer Society Proceedings Manuscript Formatting Guidelines). </p>
+                            <p>All submissions will be peer-reviewed, and all accepted workshop papers will
+                                be published in the proceedings by the IEEE Computer Society Press. </p>
+                            <br>
+                            <h4>Submission Site</h4>
+                            Submit your paper <a href="https://wi-lab.com/cyberchair/2015/bigdata15/scripts/submit.php?subarea=S22&undisplay_detail=1&wh=/cyberchair/2015/bigdata15/scripts/ws_submit.php">here</a>
+
+                        </div>
+                    </section>
+
+                    <!-- Four -->
+                    <section id="six">
+                        <div class="container">
+                            <h3>Organizers</h3>
+                            <h4>Organizing Committee</h4>
+                            <li> <a href="http://knoesis.wright.edu/researchers/pramod">Pramod Anantharam</a>, Kno.e.sis Center, Wright State University </li>
+                            <li> <a href="http://lhncbc.nlm.nih.gov/personnel/olivier-bodenreider">Olivier Bodenreider</a>, NIH/NLM</li>
+                            <li> <a href="http://jyotishman.info">Jyotishman Pathak</a>, Mayo Clinic </li>
+                            <li> <a href="https://med.stanford.edu/profiles/maryam-panahiazar">Maryam Panahiazar</a>, Stanford University </li>
+                            <li> <a href="http://cci.case.edu/cci/index.php/Satya_Sahoo">Satya Sahoo</a>, Case Western Reserve University </li>
+                            <li> <a href="http://knoesis.org/resources/researchers/vahid/Vahid_Taslimitehrani_Homepage.html">Vahid Taslimitehrani</a>, Kno.e.sis Center, Wright State University </li>
+
+                            <h4>Program Committee</h4>
+                            TBA
+
+                        </div>
+                    </section>
+
+
+
+
+                </div>
+
+                <!-- Footer -->
+                <section id="footer">
+                    <div class="container">
+
+                    </div>
+                </section>
+
+            </div>
+
+        </div><div id="skel-layers-hiddenWrapper" style="height: 100%;"></div><div id="skel-layers-visibleWrapper" style="position: relative;"><section id="header" class="skel-layers-fixed" style="backface-visibility: hidden; transition: -webkit-transform 0.5s ease, opacity 0.5s ease; -webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;">
+                <header>
+                    <span class="image avatar"><img src="" alt=""></span>
+                    <h1 id="logo"><a href=""></a></h1>
+                    <p>1st International Workshop on Deriving Value from Big Data in Healthcare</p>
+                    <p>Oct. 29 2015, Santa Clara, CA, USA 
+                    </p></header>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="file:///Users/vahidtaslimitehrani/Desktop/bigdata15.html/#one" class="active" id="one-link">Overview</a></li>
+                        <li><a href="file:///Users/vahidtaslimitehrani/Desktop/bigdata15.html/#two" id="two-link" class="">Call for Paper</a></li>
+                        <li><a href="file:///Users/vahidtaslimitehrani/Desktop/bigdata15.html/#three" id="three-link" class="">Topics of Interest</a></li>
+                        <li><a href="file:///Users/vahidtaslimitehrani/Desktop/bigdata15.html/#four" id="four-link" class="">Important Dates</a></li>
+                        <li><a href="file:///Users/vahidtaslimitehrani/Desktop/bigdata15.html/#five" id="five-link" class="">Submission</a></li>
+                        <li><a href="file:///Users/vahidtaslimitehrani/Desktop/bigdata15.html/#six" id="six-link" class="">Organization</a></li>
+
+                    </ul>
+                </nav>
+                <footer>
+                </footer>
+            </section></div></body></html>
